@@ -7,26 +7,24 @@ import Img4 from "/img/4.jpg";
 import { PiTreeEvergreenThin } from "react-icons/pi";
 import Button from "../Button";
 
-const SliderComponent = () => {
+const HeroSlider = () => {
   const settings = {
+    arrows: false,
     dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
   };
   return (
-    <div className="rounded-lg border border-gray-200 bg-neutral-100 py-8">
+    <div className="mx-auto rounded-lg border border-gray-200 bg-neutral-100 py-8">
       <Slider {...settings}>
         <div className="!flex items-center justify-around">
-          <div className=" text-christmas-green flex  flex-col items-center justify-center">
-            <PiTreeEvergreenThin
-              className="text-christmas-red mb-3"
-              size={50}
-            />
-            <h1 className="font-ibmPlexSerif mb-6 text-6xl italic">
+          <div className=" text-christmas-green flex flex-col items-center justify-center">
+            <PiTreeEvergreenThin size={50} />
+            <h1 className="font-ibmPlexSerif mb-6 text-5xl font-light italic">
               Christmas Collection
             </h1>
             <Button text="SHOP" />
@@ -67,4 +65,4 @@ const SliderComponent = () => {
   );
 };
 
-export default SliderComponent;
+export default HeroSlider;

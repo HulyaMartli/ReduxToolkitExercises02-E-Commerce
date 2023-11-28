@@ -8,7 +8,7 @@ export default {
         ibmPlexSerif: ["IBM Plex Serif", "serif"],
       },
       colors: {
-        "christmas-red": "#FF4040",
+        "nino-red-base": "#FF4040",
         "christmas-green": "#3F5B2C",
       },
     },

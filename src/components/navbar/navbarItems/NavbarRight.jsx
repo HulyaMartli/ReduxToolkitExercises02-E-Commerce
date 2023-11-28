@@ -6,7 +6,7 @@ import { BsBasket } from "react-icons/bs";
 const NavbarRight = () => {
   return (
     <div className="flex items-center gap-8">
-      <div className="flex items-center rounded-full border bg-neutral-100 px-6 py-3 hover:border-yellow-500 hover:text-yellow-500">
+      <div className="hover:border-nino-red-base hover:text-nino-red-base flex items-center rounded-full border bg-neutral-100 px-6 py-3">
         <input
           type="search"
           placeholder="Search..."
@@ -14,12 +14,12 @@ const NavbarRight = () => {
         />
         <CiSearch size={28} className="cursor-pointer" />
       </div>
-      <CiHeart size={40} className="cursor-pointer hover:text-yellow-500" />
+      <CiHeart size={35} className="hover:text-nino-red-base cursor-pointer" />
       <div className="relative cursor-pointer">
-        <p className="absolute -right-1 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-500 p-2 text-xs text-white">
+        <span className="bg-nino-red-base absolute -right-1 top-2 flex h-6 w-6 items-center justify-center rounded-full p-2 text-sm font-normal text-white">
           3
-        </p>
-        <BsBasket size={30} />
+        </span>
+        <BsBasket size={35} />
       </div>
     </div>
   );
