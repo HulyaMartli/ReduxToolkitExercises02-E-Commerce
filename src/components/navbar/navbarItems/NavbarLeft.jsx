@@ -7,7 +7,7 @@ const NavbarLeft = () => {
       <div className="text-4xl ">
         <p>
           Sho
-          <span className="text-christmas-red font-ibmPlexSerif font-light ">
+          <span className="font-ibmPlexSerif font-normal text-yellow-500 ">
             PIC
           </span>
         </p>

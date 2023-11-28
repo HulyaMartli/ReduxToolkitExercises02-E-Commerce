@@ -14,15 +14,18 @@ const SliderComponent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
+    speed: 2000,
     autoplaySpeed: 5000,
   };
   return (
-    <div className="rounded-lg border border-gray-200">
+    <div className="rounded-lg border border-gray-200 bg-neutral-100 py-8">
       <Slider {...settings}>
         <div className="!flex items-center justify-around">
           <div className=" text-christmas-green flex  flex-col items-center justify-center">
-            <PiTreeEvergreenThin className=" mb-3" size={50} />
+            <PiTreeEvergreenThin
+              className="text-christmas-red mb-3"
+              size={50}
+            />
             <h1 className="font-ibmPlexSerif mb-6 text-6xl italic">
               Christmas Collection
             </h1>
@@ -56,7 +59,7 @@ const SliderComponent = () => {
             src={Img4}
             width={400}
             alt="drawing 4"
-            className="mt-20 rounded-lg px-4 shadow-lg"
+            className="mt-20 rounded-lg  shadow-lg"
           />
         </div>
       </Slider>

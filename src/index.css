@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-inter font-extralight;
+  @apply font-inter bg-neutral-50 font-extralight;
 }
